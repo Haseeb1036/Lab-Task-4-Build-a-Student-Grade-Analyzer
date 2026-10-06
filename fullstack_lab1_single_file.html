@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saad Amer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #E8F1F5;
+            color: #1B1B1B;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            gap: 20px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        span {
+            font-style: italic;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .heading {
+            background-color: #21295C;
+            padding: 16px 0;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 40px 0 30px;
+        }
+
+        .intro img {
+            width: 105px;
+            height: 105px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #006A9A;
+            margin-bottom: 20px;
+        }
+
+        .intro h1 {
+            color: #006A9A;
+            margin-bottom: 15px;
+        }
+
+        .intro p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            margin-bottom: 5px;
+        }
+
+        .hobbies-list {
+            padding-left: 20px;
+        }
+
+        .hobbies-list li {
+            color: #006A9A;
+            margin: 5px 0;
+        }
+
+        .schedule-table {
+            border-collapse: collapse;
+            margin-top: 5px;
+        }
+
+        .schedule-table th {
+            background-color: #21295C;
+            color: white;
+            padding: 8px 10px;
+            text-align: left;
+        }
+
+        .schedule-table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #E8F1F5;
+        }
+
+        .schedule-table tr:nth-child(even) {
+            background-color: #E8F1F5;
+        }
+
+        .github-btn {
+            display: inline-block;
+            background-color: #006A9A;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .intro {
+                padding-top: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="heading">
+        <div class="container header-inner">
+            <p><span>Saad Amer</span></p>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="about" class="intro">
+            <h1>HI, I am Saad</h1>
+
+            <p>
+                Hi, I’m Saad, a passionate and creative individual who enjoys turning ideas
+                into meaningful and engaging digital experiences. I’m always eager to learn
+                new skills, explore modern technologies, and take on challenges that help me
+                grow. I believe in creating work that is simple, effective, and visually
+                appealing while focusing on quality and user experience.
+            </p>
+        </section>
+
+        <section id="hobbies" class="card">
+            <h2>Hobbies &amp; Skills</h2>
+
+            <ul class="hobbies-list">
+                <li>Web Development</li>
+                <li>Cricket</li>
+                <li>Playing</li>
+            </ul>
+        </section>
+
+        <section id="schedule" class="card">
+            <h2>My Weekly Schedule</h2>
+
+            <table class="schedule-table">
+                <tr>
+                    <th>Day</th>
+                    <th>Subject</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Database</td>
+                </tr>
+                <tr>
+                    <td>friday</td>
+                    <td>AI</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Get in Touch</h2>
+            <p>work hard for your exams.</p>
+
+            <a class="github-btn" href="https://github.com/saadamer815" target="_blank">
+                Visit My GitHub
+            </a>
+        </section>
+
+    </main>
+
+</body>
+</html>
